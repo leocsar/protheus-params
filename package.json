@@ -1,8 +1,14 @@
 {
   "name": "protheus-params",
   "displayName": "Protheus Params",
-  "description": "Ao passar o mouse por cima de algum parâmetro em um fonte Tlpp/AdvPl, mostra a descrição desse parâmetro.",
+  "description": "Extensão que permite visualizar a descrição dos parâmetros do Protheus apenas passando o mouse por cima do parâmetro.",
+	"publisher": "leocsar",
   "version": "0.0.1",
+	"qna": "marketplace",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leocsar/protheus-params"
+	},
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -54,20 +60,15 @@
     }
   ],
   "categories": [
-    "Other"
+    "Debuggers",
+    "Snippets"
   ],
   "activationEvents": [
     "onLanguage:advpl"
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "protheus-params.seeProbatLog",
-        "title": "Ver resultado dos testes do PROBAT",
-        "shortTitle": "Resultados PROBAT"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
