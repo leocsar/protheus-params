@@ -1,0 +1,95 @@
+{
+  "name": "protheus-params",
+  "displayName": "Protheus Params",
+  "description": "Ao passar o mouse por cima de algum parâmetro em um fonte Tlpp/AdvPl, mostra a descrição desse parâmetro.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+	"keywords": [
+		"editor",
+		"advpl",
+		"tlpp",
+		"params",
+		"parameters",
+		"totvs",
+		"dimension lab"
+	],
+  "languages": [
+    {
+      "id": "advpl",
+      "extensions": [
+        ".prw",
+        ".prx",
+        ".prg",
+        ".aph",
+        ".apl",
+        ".tlpp",
+        ".ahu",
+        ".apw"
+      ],
+      "aliases": [
+        "Advpl(PRW)",
+        "Advpl(PRX)",
+        "Advpl(PRG)",
+        "Advpl(APH)",
+        "Advpl(APL)",
+        "TLPP(tlpp)",
+        "Advpl(AHU)",
+        "Advpl(APW)"
+      ],
+      "configuration": "./advpl.configuration.json"
+    },
+    {
+      "id": "advpl-tlpp-header",
+      "extensions": [
+        ".ch",
+        ".th"
+      ],
+      "aliases": [
+        "Advpl Header(CH)",
+        "TLPP Header (TH)"
+      ],
+      "configuration": "./advpl-tlpp-header.configuration.json"
+    }
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:advpl"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "protheus-params.seeProbatLog",
+        "title": "Ver resultado dos testes do PROBAT",
+        "shortTitle": "Resultados PROBAT"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.34.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5",
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "@vscode/test-electron": "^2.2.3"
+  }
+}
