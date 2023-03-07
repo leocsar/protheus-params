@@ -2,7 +2,8 @@
   "name": "protheus-params",
   "displayName": "Protheus Params",
   "description": "Extensão que permite visualizar a descrição dos parâmetros do Protheus apenas passando o mouse por cima do parâmetro.",
-	"publisher": "leocsar",
+	"icon": "docs/favicon.png",
+	"publisher": "dimensionlab",
   "version": "0.0.1",
 	"qna": "marketplace",
 	"repository": {
