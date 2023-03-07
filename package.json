@@ -4,7 +4,7 @@
   "description": "Extensão que permite visualizar a descrição dos parâmetros do Protheus apenas passando o mouse por cima do parâmetro.",
 	"icon": "docs/favicon.png",
 	"publisher": "dimensionlab",
-  "version": "0.0.1",
+  "version": "0.0.2",
 	"qna": "marketplace",
 	"repository": {
 		"type": "git",
