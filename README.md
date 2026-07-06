@@ -8,11 +8,6 @@ Extensão que permite visualizar a descrição dos parâmetros do Protheus apena
 Em construção
 
 
-## Erros conhecidos
-
-Caso encontre, nos avise.
-
-
 ##  Notas de Release
 
 Em construção
