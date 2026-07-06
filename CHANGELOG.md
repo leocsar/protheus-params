@@ -6,6 +6,17 @@ Consulte o [Keep a Changelog](http://keepachangelog.com/) para recomendações d
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-07-06
+
+### Corrigido
+
+- Corrigido o caminho do ícone da extensão, que apontava para `docs/favicon.png` mas estava em `src/docs/` (fora do pacote), impedindo o empacotamento. O arquivo foi movido para `docs/favicon.png`.
+
+### Alterado
+
+- README reescrito com documentação dos recursos, do uso e dos comandos de importação de parâmetros.
+- `.vscodeignore` passou a excluir `.claude/`, evitando que arquivos locais de configuração fossem incluídos no pacote publicado.
+
 ## [0.1.0] - 2026-07-06
 
 ### Adicionado
